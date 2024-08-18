@@ -1,0 +1,25 @@
+{
+  "name": "@cabezonidas/react-toast",
+  "version": "1.0.0",
+  "description": "Headless toaster for React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cabezonidas/react-toast.git"
+  },
+  "keywords": [
+    "toast",
+    "useToast",
+    "react-toast",
+    "headless"
+  ],
+  "author": "Sebastian Cabeza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cabezonidas/react-toast/issues"
+  },
+  "homepage": "https://github.com/cabezonidas/react-toast#readme"
+}
