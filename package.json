@@ -4,7 +4,12 @@
   "description": "Headless toaster for React",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "npx prettier . --write",
+    "build": "node build.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -21,5 +26,36 @@
   "bugs": {
     "url": "https://github.com/cabezonidas/react-toast/issues"
   },
-  "homepage": "https://github.com/cabezonidas/react-toast#readme"
+  "homepage": "https://github.com/cabezonidas/react-toast#readme",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.6.1",
+    "@eslint/js": "^9.9.0",
+    "@storybook/addon-essentials": "^8.2.9",
+    "@storybook/addon-interactions": "^8.2.9",
+    "@storybook/addon-links": "^8.2.9",
+    "@storybook/addon-onboarding": "^8.2.9",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.5",
+    "@storybook/blocks": "^8.2.9",
+    "@storybook/react": "^8.2.9",
+    "@storybook/react-webpack5": "^8.2.9",
+    "@storybook/test": "^8.2.9",
+    "esbuild": "0.23.1",
+    "eslint": "^9.9.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.35.0",
+    "globals": "^15.9.0",
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.9",
+    "prettier": "3.3.3",
+    "storybook": "^8.2.9",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.1.0"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
 }
