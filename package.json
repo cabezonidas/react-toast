@@ -6,7 +6,7 @@
   "scripts": {
     "format": "npx prettier . --write",
     "build": "node build.js",
-    "test": "echo \"Error: no test specified\"",
+    "test": "jest",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "prepare": "husky"
@@ -50,6 +50,8 @@
     "@storybook/react": "^8.2.9",
     "@storybook/react-webpack5": "^8.2.9",
     "@storybook/test": "^8.2.9",
+    "@testing-library/react": "^16.0.0",
+    "@types/jest": "^29.5.12",
     "@types/react-dom": "^18.3.0",
     "esbuild": "0.23.1",
     "eslint": "^9.9.0",
@@ -57,10 +59,14 @@
     "eslint-plugin-react": "^7.35.0",
     "globals": "^15.9.0",
     "husky": "^9.1.4",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "lint-staged": "^15.2.9",
     "prettier": "3.3.3",
     "semantic-release": "^24.1.0",
     "storybook": "^8.2.9",
+    "ts-jest": "^29.2.4",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.1.0"
   },
