@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/cabezonidas/react-toast/compare/v1.0.0...v1.1.0) (2024-08-19)
+
+### Features
+
+- add basic testing ([ea81bbf](https://github.com/cabezonidas/react-toast/commit/ea81bbf583b65da4b3a2188dc31eb7f72eb7c548))
+- add unbranded toaster ([22a7507](https://github.com/cabezonidas/react-toast/commit/22a750711bba5074f263602ae07ab74c4d29e67e))
+
 # 1.0.0 (2024-08-19)
 
 ### Bug Fixes
