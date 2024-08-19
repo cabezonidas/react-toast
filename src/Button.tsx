@@ -47,7 +47,6 @@ export const Button = ({
       {...props}
     >
       {label}
-      <div></div>
     </button>
   );
 };
