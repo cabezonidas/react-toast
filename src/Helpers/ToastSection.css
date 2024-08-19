@@ -1,0 +1,238 @@
+.ToastSection {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0.5rem;
+  max-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* IE and Edge */
+  -ms-overflow-style: none;
+  /* Firefox */
+  scrollbar-width: none;
+  /* Opera Safari Chrome */
+}
+.ToastSection::-webkit-scrollbar {
+  display: none;
+}
+.ToastSection > :not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.ToastSection [data-toastid] {
+  pointer-events: all;
+}
+.ToastSection.topLeft {
+  grid-area: left;
+}
+.ToastSection.topLeft [data-toastid] {
+  margin-right: auto;
+  max-height: 100vh;
+  animation: 0.4s topLeftin forwards;
+}
+@keyframes topLeftin {
+  0% {
+    opacity: 0;
+    transform: translateX(-40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%);
+  }
+}
+.ToastSection.topLeft [data-toastid].ItemDeleted {
+  animation: 0.4s topLeftout forwards;
+}
+@keyframes topLeftout {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(-40%);
+  }
+  100% {
+    opacity: 0;
+    max-height: 0;
+    margin-bottom: 0;
+  }
+}
+.ToastSection.topCenter {
+  grid-area: center;
+}
+.ToastSection.topCenter [data-toastid] {
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 100vh;
+  animation: 0.4s topCenterin forwards;
+}
+@keyframes topCenterin {
+  0% {
+    opacity: 0;
+    transform: translateY(-40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%);
+  }
+}
+.ToastSection.topCenter [data-toastid].ItemDeleted {
+  animation: 0.4s topCenterout forwards;
+}
+@keyframes topCenterout {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-40%);
+  }
+  100% {
+    opacity: 0;
+    max-height: 0;
+    margin-bottom: 0;
+  }
+}
+.ToastSection.topRight {
+  grid-area: right;
+}
+.ToastSection.topRight [data-toastid] {
+  margin-left: auto;
+  max-height: 100vh;
+  animation: 0.4s topRightin forwards;
+}
+@keyframes topRightin {
+  0% {
+    opacity: 0;
+    transform: translateX(40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%);
+  }
+}
+.ToastSection.topRight [data-toastid].ItemDeleted {
+  animation: 0.4s topRightout forwards;
+}
+@keyframes topRightout {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(40%);
+  }
+  100% {
+    opacity: 0;
+    max-height: 0;
+    margin-bottom: 0;
+  }
+}
+.ToastSection.bottomLeft {
+  margin-right: auto;
+  grid-area: left;
+  margin-top: auto;
+}
+.ToastSection.bottomLeft [data-toastid] {
+  animation: 0.4s bottomLeftin forwards;
+}
+@keyframes bottomLeftin {
+  0% {
+    opacity: 0;
+    max-height: 0;
+  }
+  50% {
+    max-height: 100vh;
+    opacity: 0;
+    transform: translateX(-40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%);
+  }
+}
+.ToastSection.bottomLeft [data-toastid].ItemDeleted {
+  animation: 0.4s bottomLeftout forwards;
+}
+@keyframes bottomLeftout {
+  0% {
+    opacity: 1;
+    max-height: 100vh;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-40%);
+  }
+}
+.ToastSection.bottomCenter {
+  grid-area: center;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ToastSection.bottomCenter [data-toastid] {
+  animation: 0.4s bottomCenterin forwards;
+}
+@keyframes bottomCenterin {
+  0% {
+    opacity: 0;
+    max-height: 0;
+  }
+  50% {
+    max-height: 100vh;
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%);
+  }
+}
+.ToastSection.bottomCenter [data-toastid].ItemDeleted {
+  animation: 0.4s bottomCenterout forwards;
+}
+@keyframes bottomCenterout {
+  0% {
+    opacity: 1;
+    max-height: 100vh;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-40%);
+  }
+}
+.ToastSection.bottomRight {
+  grid-area: right;
+  margin-top: auto;
+}
+.ToastSection.bottomRight [data-toastid] {
+  margin-left: auto;
+  animation: 0.4s bottomRightin forwards;
+}
+@keyframes bottomRightin {
+  0% {
+    opacity: 0;
+    max-height: 0;
+  }
+  50% {
+    max-height: 100vh;
+    opacity: 0;
+    transform: translateX(40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%);
+  }
+}
+.ToastSection.bottomRight [data-toastid].ItemDeleted {
+  animation: 0.4s bottomRightout forwards;
+}
+@keyframes bottomRightout {
+  0% {
+    opacity: 1;
+    max-height: 100vh;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(40%);
+  }
+}
