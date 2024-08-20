@@ -1,6 +1,6 @@
 {
   "name": "@cabezonidas/react-toast",
-  "version": "1.0.0",
+  "version": "1.4.0",
   "description": "Headless toaster for React",
   "main": "index.js",
   "scripts": {

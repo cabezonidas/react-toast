@@ -1,3 +1,13 @@
+# [1.4.0](https://github.com/cabezonidas/react-toast/compare/v1.3.0...v1.4.0) (2024-08-20)
+
+### Features
+
+- add NPM publishing ([60a0e04](https://github.com/cabezonidas/react-toast/commit/60a0e049fd5372a2ee9475185e77164fd90c60de))
+- rename secret ([69fc496](https://github.com/cabezonidas/react-toast/commit/69fc496e6e35e498e92ddbc8caff6fbbc7c4c726))
+- rename secret 2 ([fa0aa51](https://github.com/cabezonidas/react-toast/commit/fa0aa51c24f76fee702c3413ecc8b7bbb853bcf0))
+- rename secret 3 ([51184ef](https://github.com/cabezonidas/react-toast/commit/51184ef5e0a536d2fbc9a9fd4c4f0215cab0cfb2))
+- trigger pipeline test ([7655b84](https://github.com/cabezonidas/react-toast/commit/7655b841fe5cf1a65e5f7846c0cbc766ca9fabbe))
+
 # [1.3.0](https://github.com/cabezonidas/react-toast/compare/v1.2.0...v1.3.0) (2024-08-20)
 
 ### Features
