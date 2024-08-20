@@ -1,3 +1,9 @@
+# [1.3.0](https://github.com/cabezonidas/react-toast/compare/v1.2.0...v1.3.0) (2024-08-20)
+
+### Features
+
+- add debug to release ([ad19fb0](https://github.com/cabezonidas/react-toast/commit/ad19fb02b6c38d58234e0276e06cef961f32866d))
+
 # [1.2.0](https://github.com/cabezonidas/react-toast/compare/v1.1.0...v1.2.0) (2024-08-20)
 
 ### Features
