@@ -1,3 +1,9 @@
+# [1.5.0](https://github.com/cabezonidas/react-toast/compare/v1.4.0...v1.5.0) (2024-08-20)
+
+### Features
+
+- make package private ([8f9e657](https://github.com/cabezonidas/react-toast/commit/8f9e6573b577363c7b89d2be1b55bda683835a13))
+
 # [1.4.0](https://github.com/cabezonidas/react-toast/compare/v1.3.0...v1.4.0) (2024-08-20)
 
 ### Features
