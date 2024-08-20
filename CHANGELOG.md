@@ -1,3 +1,9 @@
+# [1.7.0](https://github.com/cabezonidas/react-toast/compare/v1.6.0...v1.7.0) (2024-08-20)
+
+### Features
+
+- remove deps ([a65daec](https://github.com/cabezonidas/react-toast/commit/a65daec52c1e68ce9c789dd4e37773ea79fd24a7))
+
 # [1.6.0](https://github.com/cabezonidas/react-toast/compare/v1.5.0...v1.6.0) (2024-08-20)
 
 ### Features
