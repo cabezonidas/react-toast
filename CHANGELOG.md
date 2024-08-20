@@ -1,3 +1,9 @@
+# [1.2.0](https://github.com/cabezonidas/react-toast/compare/v1.1.0...v1.2.0) (2024-08-20)
+
+### Features
+
+- publish package after release ([6a02ddf](https://github.com/cabezonidas/react-toast/commit/6a02ddfd534268031cdc44d24a95485f659c4b08))
+
 # [1.1.0](https://github.com/cabezonidas/react-toast/compare/v1.0.0...v1.1.0) (2024-08-19)
 
 ### Features
