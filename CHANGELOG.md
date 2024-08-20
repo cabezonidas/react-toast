@@ -1,3 +1,9 @@
+# [1.8.0](https://github.com/cabezonidas/react-toast/compare/v1.7.0...v1.8.0) (2024-08-20)
+
+### Features
+
+- fix package ([a1925ee](https://github.com/cabezonidas/react-toast/commit/a1925ee2eb230a0356a5b81e3714d8a2ef2e2131))
+
 # [1.7.0](https://github.com/cabezonidas/react-toast/compare/v1.6.0...v1.7.0) (2024-08-20)
 
 ### Features
