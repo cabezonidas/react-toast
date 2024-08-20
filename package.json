@@ -3,7 +3,17 @@
   "version": "1.8.0",
   "description": "Headless toaster for React",
   "main": "dist/bundle.js",
+  "module": "dist/bundle.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/bundle.js",
+      "require": "./dist/bundle.js"
+    }
+  },
   "scripts": {
     "format": "npx prettier . --write",
     "build": "tsc && node build.js",
