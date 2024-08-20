@@ -1,3 +1,3 @@
 # react-toast
 
-Headless toaster for React
+Headless toaster for React apps
