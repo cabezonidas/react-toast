@@ -15,7 +15,9 @@
     "type": "git",
     "url": "https://github.com/cabezonidas/react-toast.git"
   },
-  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "toast",
     "useToast",
