@@ -2,10 +2,11 @@
   "name": "@cabezonidas/react-toast",
   "version": "1.7.0",
   "description": "Headless toaster for React",
-  "main": "index.js",
+  "main": "dist/bundle.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "format": "npx prettier . --write",
-    "build": "node build.js",
+    "build": "tsc && node build.js",
     "test": "jest",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",

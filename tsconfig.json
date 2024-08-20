@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "./dist",
+    "outDir": "./dist",
     "target": "ESNext",
     "module": "ESNext",
     "jsx": "react-jsx",
