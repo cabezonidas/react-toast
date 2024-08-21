@@ -1,3 +1,9 @@
+# [1.11.0](https://github.com/cabezonidas/react-toast/compare/v1.10.0...v1.11.0) (2024-08-21)
+
+### Features
+
+- fix package 4 ([04c29f0](https://github.com/cabezonidas/react-toast/commit/04c29f06358d539a60e3e35302a51587385b78f4))
+
 # [1.10.0](https://github.com/cabezonidas/react-toast/compare/v1.9.0...v1.10.0) (2024-08-21)
 
 ### Features
