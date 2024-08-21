@@ -1,3 +1,9 @@
+# [1.12.0](https://github.com/cabezonidas/react-toast/compare/v1.11.0...v1.12.0) (2024-08-21)
+
+### Features
+
+- fix css ([4a37bb4](https://github.com/cabezonidas/react-toast/commit/4a37bb40d1aee7edbff61e17f05f93de46f44e34))
+
 # [1.11.0](https://github.com/cabezonidas/react-toast/compare/v1.10.0...v1.11.0) (2024-08-21)
 
 ### Features
