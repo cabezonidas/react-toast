@@ -1,5 +1,3 @@
-import "./ToastProvider.css";
-
 import React, { Dispatch, ReactNode, useCallback, useContext } from "react";
 import { createPortal } from "react-dom";
 import { getToastProviderEl } from "./Helpers/getToastProviderEl";
