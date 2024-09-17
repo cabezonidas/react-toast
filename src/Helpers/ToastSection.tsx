@@ -1,7 +1,9 @@
 import React, { Fragment, useCallback, useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import { getToastProviderEl } from "./getToastProviderEl";
-import { IToast, ToastPosition } from "./ToastTypes";
+import { IToast, ToastOptions } from "./ToastTypes";
+
+type ToastPosition = NonNullable<ToastOptions["position"]>;
 
 const getToastSectionEl = (position: ToastPosition) => {
   const portal = getToastProviderEl();

@@ -1,5 +1,7 @@
-import { IToast, ToastAction, ToastPosition } from "./ToastTypes";
+import { IToast, ToastAction, ToastOptions } from "./ToastTypes";
 import { reducer } from "./useToastState";
+
+type ToastPosition = NonNullable<ToastOptions["position"]>;
 
 describe("useToastState", () => {
   it("adds a toast", () => {

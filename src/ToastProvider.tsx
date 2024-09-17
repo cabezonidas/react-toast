@@ -2,8 +2,10 @@ import React, { Dispatch, ReactNode, useCallback, useContext } from "react";
 import { createPortal } from "react-dom";
 import { getToastProviderEl } from "./Helpers/getToastProviderEl";
 import { ToastSection } from "./Helpers/ToastSection";
-import { ToastAction, ToastPosition } from "./Helpers/ToastTypes";
+import { ToastAction, ToastOptions } from "./Helpers/ToastTypes";
 import { useToastState } from "./Helpers/useToastState";
+
+type ToastPosition = NonNullable<ToastOptions["position"]>;
 
 export const ToastContext = React.createContext<
   Dispatch<ToastAction> | undefined

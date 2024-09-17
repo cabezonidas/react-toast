@@ -1,9 +1,10 @@
-import React, { useContext, useMemo } from "react";
-import { ToastAction, ToastNode, ToastOptions } from "./Helpers/ToastTypes";
-import { ToastContext } from "./ToastProvider";
+import React, { ReactNode, useContext, useMemo } from "react";
+import { Expand } from "./Helpers/Expand";
 import { getToastProviderEl } from "./Helpers/getToastProviderEl";
+import { ToastAction, ToastOptions } from "./Helpers/ToastTypes";
+import { ToastContext } from "./ToastProvider";
 
-type Config = ToastOptions & { id?: number };
+type Config = Expand<ToastOptions & { id?: number }>;
 
 const getUniquetoastid = (): number => {
   const id = Number(`${Math.floor(Math.random() * 10_000_000)}`.slice(0, 4));
@@ -18,10 +19,16 @@ const getUniquetoastid = (): number => {
 const toastFunctions = (
   dispatch?: React.Dispatch<ToastAction>,
 ): {
-  toast: (notification: ToastNode, config?: Config) => number;
+  toast: (
+    notification: ReactNode | ((e: { close: () => void }) => ReactNode),
+    config?: Config,
+  ) => number;
   dismiss: (toastid: number) => void;
 } => {
-  const toast = (notification: ToastNode, config: Config = {}) => {
+  const toast = (
+    notification: ReactNode | ((e: { close: () => void }) => ReactNode),
+    config: Config = {},
+  ) => {
     const { id = getUniquetoastid(), ...options } = config;
     dispatch?.({ type: "add", notification, options, id });
     return id;
