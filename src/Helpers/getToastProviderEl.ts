@@ -29,5 +29,47 @@ export const getToastProviderEl = (): HTMLDivElement => {
     document.body.appendChild(portal);
   }
 
+  new MutationObserver(
+    () => (portal.style.gridTemplateColumns = gridTemplateColumns(portal)),
+  ).observe(portal, {
+    childList: true,
+    subtree: true,
+  });
+
   return portal;
+};
+
+const gridTemplateColumns = (portal: HTMLDivElement) => {
+  const getToasts = (section: string) =>
+    portal.querySelector(`.ToastSection.${section}`)?.childNodes?.length ?? 0;
+
+  const topLeft = getToasts("topLeft");
+  const bottomLeft = getToasts("bottomLeft");
+  const left = topLeft + bottomLeft;
+
+  const topCenter = getToasts("topCenter");
+  const bottomCenter = getToasts("bottomCenter");
+  const center = topCenter + bottomCenter;
+
+  const topRight = getToasts("topRight");
+  const bottomRight = getToasts("bottomRight");
+  const right = topRight + bottomRight;
+
+  if (left && !center && !right) {
+    return `1fr 0fr 0fr`;
+  }
+
+  if (!left && !center && right) {
+    return `0fr 0fr 1fr`;
+  }
+
+  if (center && !left && !right) {
+    return `0fr 1fr 0fr`;
+  }
+
+  if (!center && left && right) {
+    return `1fr 0fr 1fr`;
+  }
+
+  return `1fr 1fr 1fr`;
 };
