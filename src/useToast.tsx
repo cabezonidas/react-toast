@@ -42,12 +42,29 @@ const toastFunctions = (
 
 /**
  * Hook to display pop-up messages in response to a user action or state change. Examples include: Saving, exporting, committing, deleting, etc.
+ * Custom toasts accept `ReactNode` or `({ close: () => void }) => ReactNode`
+ *
  * @example
- * // Custom toasts accept `ReactNode` or `({ close: () => void }) => ReactNode`
+ * // Persist toast with manual dismiss
  * const { toast } = useToast();
- * toast(({ close }) => <button onClick={() => close()}>Click me to dismiss</button>, { timeout: Infinity });
- * toast(<div>I will be dismissed in 3s.</div>, { timeout: 3000 });
- * toast("I'm placed in the topLeft of the page", { position: 'topLeft' });
+ * const config = { timeout: Infinity };
+ * toast((t) => <div onClick={t.close}>dismiss</div>, config);
+ 
+ * @example
+ * // Custom timeout
+ * const { toast } = useToast();
+ * toast(<div>Will dismiss in 3s.</div>, { timeout: 3000 });
+ * 
+ * @example
+ * // Custom position
+ * const { toast } = useToast();
+ * toast("I'm a topLeft toast", { position: 'topLeft' });
+ *
+ * @example
+ * // External dismiss
+ * const { toast, dismiss } = useToast();
+ * const toastid = toast("Some text");
+ * dismiss(toastid);
  */
 export const useToast = () => {
   const dispatch = useContext(ToastContext);
