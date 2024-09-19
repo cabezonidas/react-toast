@@ -1,3 +1,9 @@
+## [1.12.1](https://github.com/cabezonidas/react-toast/compare/v1.12.0...v1.12.1) (2024-09-19)
+
+### Bug Fixes
+
+- improve multiple toasts ([55643a3](https://github.com/cabezonidas/react-toast/commit/55643a36b183304e9d3546e1e7fec90d96967785))
+
 # [1.12.0](https://github.com/cabezonidas/react-toast/compare/v1.11.0...v1.12.0) (2024-08-21)
 
 ### Features
