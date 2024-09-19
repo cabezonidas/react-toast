@@ -1,3 +1,9 @@
+## [1.12.2](https://github.com/cabezonidas/react-toast/compare/v1.12.1...v1.12.2) (2024-09-19)
+
+### Bug Fixes
+
+- update docs & readme ([0e7ef9e](https://github.com/cabezonidas/react-toast/commit/0e7ef9e05643b12c4fc1f3e1ad91f9f4261b293c))
+
 ## [1.12.1](https://github.com/cabezonidas/react-toast/compare/v1.12.0...v1.12.1) (2024-09-19)
 
 ### Bug Fixes
